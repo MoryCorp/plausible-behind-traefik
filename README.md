@@ -1,4 +1,4 @@
-# Plausible.io behind Traefik
+# Plausible.io behind Traefik 2
 
 Hello everyone, I created this repository to show you how to run **Plausible.io** with **Traefik** as a **reverse-proxy**. This will let you have a **SSL certificate** on your **self-hosted** instance.
 
