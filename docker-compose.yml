@@ -41,7 +41,7 @@ services:
     restart: always
     labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.plausible.rule=Host(`stats.holory.fr`)"
+        - "traefik.http.routers.plausible.rule=Host(`yourdomain.com`)"
         - "traefik.http.routers.plausible.entrypoints=websecure"
         - "traefik.http.services.plausible.loadbalancer.server.port=8000"
 
