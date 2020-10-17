@@ -1,4 +1,4 @@
-# Plausible.io behind Traefik
+# Plausible.io behind Traefik 2
 
 Hello everyone, I created this repository to show you how to run **Plausible.io** with **Traefik** as a **reverse-proxy**. This will let you have a **SSL certificate** on your **self-hosted** instance.
 
@@ -17,5 +17,6 @@ The networks are configured so that only the plausible.io instance is exposed vi
 There is not much to say about this file as it is quite simple to configure.
 To generate a secret key, you can use the command : ``openssl rand -base64 64``
 
-⚠️ Add **"https://"** before your domain when you fill the **"BASE_URL"** parameter or the default value will override yours. ⚠️
+Add **"https://"** before your domain when you fill the **"BASE_URL"** parameter or the default value will override yours.
+
 Example: ``BASE_URL=https://analytics.yourdomain.com``
