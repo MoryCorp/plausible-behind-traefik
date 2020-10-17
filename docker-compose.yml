@@ -12,6 +12,7 @@ services:
       - POSTGRES_PASSWORD=postgres
     networks:
       - internal
+    restart: always
 
   plausible_events_db:
     image: yandex/clickhouse-server:latest
@@ -23,6 +24,7 @@ services:
         hard: 262144
     networks:
       - internal
+    restart: always
 
   plausible:
     image: plausible/analytics:latest
@@ -36,9 +38,10 @@ services:
     networks:
       - internal
       - web
+    restart: always
     labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.plausible.rule=Host(`yourdomain.com`)"
+        - "traefik.http.routers.plausible.rule=Host(`stats.holory.fr`)"
         - "traefik.http.routers.plausible.entrypoints=websecure"
         - "traefik.http.services.plausible.loadbalancer.server.port=8000"
 
