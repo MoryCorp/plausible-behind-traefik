@@ -4,6 +4,8 @@ Hello everyone, I created this repository to show you how to run **Plausible.io*
 
 The official documentation on which you have to rely to configure the different files is available at this address: https://docs.plausible.io/self-hosting
 
+> If you want to host your Plausible.io instance but you don't have a Traefik container yet, you can use this repository that I have created and tested with Plausible.io and other services : https://github.com/MoryCorp/traefik2-minimalist-configuration
+
 ## Edit docker-compose.yml
 
 This configuration assumes that you already have a Traefik instance configured with an **entrypoint** named **"websecure"** on port **443**.
