@@ -1,3 +1,4 @@
+
 # Plausible.io behind Traefik 2
 
 Hello everyone, I created this repository to show you how to run **Plausible.io** with **Traefik** as a **reverse-proxy**. This will let you have a **SSL certificate** on your **self-hosted** instance.
@@ -22,3 +23,12 @@ To generate a secret key, you can use the command : ``openssl rand -base64 64``
 Add **"https://"** before your domain when you fill the **"BASE_URL"** parameter or the default value will override yours.
 
 Example: ``BASE_URL=https://analytics.yourdomain.com``
+
+## Edit geoip-conf.env
+
+In order to run the GeoIP service and display the country of your visitors, you will need to create a free account on maxmind.com and generate an API key.
+
+Once you have created your account, go to the "My License Key" page and generate one.
+Put down your "Account/User ID" and your "License key" in geoip-conf.env 
+
+![enter image description here](https://i.imgur.com/ukrj33R.png)
