@@ -31,4 +31,4 @@ In order to run the GeoIP service and display the country of your visitors, you 
 Once you have created your account, go to the "My License Key" page and generate one.
 Put down your "Account/User ID" and your "License key" in geoip-conf.env 
 
-![enter image description here](https://i.imgur.com/ukrj33R.png)
+![enter image description here](https://i.imgur.com/Z6aQoYO.png)
