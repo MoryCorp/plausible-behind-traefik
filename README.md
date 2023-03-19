@@ -22,5 +22,14 @@ To generate a secret key, you can use the command : ``openssl rand -base64 64``
 
 Add **"https://"** before your domain when you fill the **"BASE_URL"** parameter or the default value will override yours.
 
-Example : ``BASE_URL=https://analytics.yourdomain.com``
+Example : ``BASE_URL=https://analytics.yourdomain.com``  
 Also change the ``POSTGRES_PASSWORD=xxxx`` with a strong password
+
+## Tips & tricks
+
+I noticed that **uBlock Origin** web extension often blocked the loading of my plausible scripts.  
+On closer inspection, some of the uBlock filters are based on the words "data" "analytics" and other words related to data collection.  
+If these words are part of your domain or sub-domain, then your script may be blocked and you may not be able to collect data.  
+
+I therefore advise you to use a sub-domain that has nothing to do with analytics vocabulary.  
+You can for example use Greek or Roman God names like: zeus.yourdomain.com
