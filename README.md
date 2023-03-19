@@ -17,9 +17,10 @@ The networks are configured so that only the plausible.io instance is exposed vi
 
 ## Edit .env
 
-There is not much to say about this file as it is quite simple to configure.
+There is not much to say about this file as it is quite simple to configure.  
 To generate a secret key, you can use the command : ``openssl rand -base64 64``
 
 Add **"https://"** before your domain when you fill the **"BASE_URL"** parameter or the default value will override yours.
 
-Example: ``BASE_URL=https://analytics.yourdomain.com``
+Example : ``BASE_URL=https://analytics.yourdomain.com``
+Also change the ``POSTGRES_PASSWORD=xxxx`` with a strong password
