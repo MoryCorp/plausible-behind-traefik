@@ -53,7 +53,7 @@ services:
 volumes:
   db-data:
   event-data:
-  geoip:
+  clickhouse:
 
 networks:
   web:
